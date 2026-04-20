@@ -17,7 +17,7 @@ interface FetchNotesProps {
     page: number, 
     search: string,
 }
-export const fetchNotes = async (params: FetchNotesProps): Promise<fetchNotesResponse> => {
+export const fetchNotes = async (params?: FetchNotesProps): Promise<fetchNotesResponse> => {
     const res = await api.get<fetchNotesResponse>('/notes', {params: params});
     return res.data;
 };

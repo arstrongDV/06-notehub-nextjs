@@ -1,5 +1,6 @@
 import React from 'react'
 import css from './Header.module.css'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -10,10 +11,10 @@ const Header = () => {
         <nav aria-label="Main Navigation">
             <ul className={css.navigation}>
             <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
             </li>
             <li>
-                <a href="/notes">Notes</a>
+                <Link href="/notes">Notes</Link>
             </li>
             </ul>
         </nav>

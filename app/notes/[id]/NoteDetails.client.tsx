@@ -27,7 +27,7 @@ const { data: note, isLoading, error } = useQuery({
         </div>
         <p className={css.tag}>{note.tag}</p>
         <p className={css.content}>{note.content}</p>
-        <p className={css.date}>{note.updatedAt ? note.updatedAt : note.createdAt}</p>
+        <p className={css.date}>{note.createdAt}</p>
         </div>
     </div>
 

@@ -1,9 +1,9 @@
 'use client';
 
-const Error = () => {
+const Loading = () => {
   return (
    <p>Loading, please wait...</p>
   );
 }
 
-export default Error;
+export default Loading;
