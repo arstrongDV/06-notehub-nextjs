@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import css from './NoteDetails.module.css'
 import { useQuery } from '@tanstack/react-query'
 import { fetchNote } from '@/lib/api'
