@@ -5,6 +5,7 @@ import type { Note } from '../../types/note'
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { deleteNote } from '../../lib/api';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 type NoteListProps = {
   notes: Note[];
@@ -26,7 +27,7 @@ const NoteList = ({ notes }: NoteListProps) => {
     {notes.map(note => (
         <li key={note.id} className={css.listItem}>
             <h2 className={css.title}>
-              <link href={`/notes/${note.id}`} >{note.title}</link>
+              <Link href={`/notes/${note.id}`} >{note.title}</Link>
               </h2>
             <p className={css.content}>{note.content}</p>
             <div className={css.footer}>
